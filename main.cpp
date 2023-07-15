@@ -4,7 +4,7 @@
 int main() {
     Contact contact = Contact("local");
     std::cout << contact.getName() << std::endl;
-    contact.setName("bigfatball");
+    contact.setName("localChange");
     std::cout << contact.getName() << std::endl;
     return 0;
 }
