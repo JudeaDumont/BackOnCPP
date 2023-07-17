@@ -9,7 +9,7 @@
 
 class Singleton {
 private:
-    std::string name = "Singleton";
+    std::string name = "singleton";
 
 public:
     [[nodiscard]] const std::string &getName() const;
