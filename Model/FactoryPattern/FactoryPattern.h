@@ -1,0 +1,10 @@
+//
+// Created by Admin on 7/21/2023.
+//
+
+#ifndef UNTITLED_FACTORYPATTERN_H
+#define UNTITLED_FACTORYPATTERN_H
+
+#endif //UNTITLED_FACTORYPATTERN_H
+
+
