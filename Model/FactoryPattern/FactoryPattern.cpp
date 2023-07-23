@@ -4,10 +4,22 @@
 
 
 #include <string>
+#include "FactoryPattern.h"
+#include "ConcreteProduct/ConcreteProduct.h"
 
-class AbstractProductA {
-public:
-    virtual ~AbstractProductA(){};
-    virtual std::string UsefulFunctionA() const = 0;
-};
+[[nodiscard]] AbstractProductA *ConcreteFactoryA::CreateProductA() const {
+    return new ConcreteProductA();
+}
+//    AbstractProductB *CreateProductB() const override {
+//        return new ConcreteProductB1();
+//    }
 
+/**
+ * Each Concrete Factory has a corresponding product variant.
+ */
+[[nodiscard]] AbstractProductB *ConcreteFactoryA::CreateProductB() const {
+    return new ConcreteProductB();
+}
+//    AbstractProductB *CreateProductB() const override {
+//        return new ConcreteProductB2();
+//    }

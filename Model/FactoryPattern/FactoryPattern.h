@@ -7,4 +7,19 @@
 
 #endif //UNTITLED_FACTORYPATTERN_H
 
+class AbstractProductA;
+class AbstractProductB;
 
+typedef AbstractProductA AbstractProductA;
+
+class AbstractFactory {
+public:
+    [[nodiscard]] virtual AbstractProductA *CreateProductA() const = 0;
+    [[nodiscard]] virtual AbstractProductB *CreateProductB() const = 0;
+};
+
+class ConcreteFactoryA : public AbstractFactory {
+public:
+    [[nodiscard]] AbstractProductA *CreateProductA() const override;
+    [[nodiscard]] AbstractProductB *CreateProductB() const override;
+};

@@ -14,3 +14,12 @@ public:
     virtual ~AbstractProductA() = default;
     [[nodiscard]] virtual std::string toString() const = 0;
 };
+
+class AbstractProductB {
+public:
+    virtual ~AbstractProductB() = default;
+    [[nodiscard]] virtual std::string toString() const = 0;
+};
+
+
+
