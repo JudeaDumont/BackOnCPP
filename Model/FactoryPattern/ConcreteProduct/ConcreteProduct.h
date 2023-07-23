@@ -20,8 +20,7 @@ public:
 class ConcreteProductB : public AbstractProductB {
 private:
     const std::string name = "ConcreteProductB";
-    const std::chrono::time_point<std::chrono::system_clock, std::chrono::duration<double>>
-            created = std::chrono::system_clock::now();
+    time_t created = std::time(nullptr);
 
 public:
     [[nodiscard]] std::string toString() const override;
